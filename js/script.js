@@ -2,13 +2,13 @@
 
 'use strict';
 /**
- * This function calculates the salary of someone exploited.
+ * This function calculates the salary and income.
  */
 
 function calculate () {
-  const TAX_RATE = 0.1805
+  const TAX_RATE = 0.1805 // constant
 	
-	// Gets hours worked and hourly rate
+	// Gets hours worked and hourly rate (converts to float)
   let hoursworked = parseFloat(document.getElementById('hours-worked').value)
   let hourlyrate = parseFloat(document.getElementById('hourly-rate').value)
   // Calculates salary pre-tax and post-tax
