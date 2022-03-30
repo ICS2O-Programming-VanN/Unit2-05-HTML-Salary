@@ -14,10 +14,10 @@ function calculate () {
   // Calculates salary pre-tax and post-tax
   let salary = hoursworked * hourlyrate
 	let taxed = salary * TAX_RATE
-  let realsalary = salary - taxed
+  let real_salary = salary - taxed
 
   // output
   document.getElementById('salaryuntaxed').innerHTML = 'Your salary before tax is $' + salary.toFixed(2)
 	document.getElementById('salarytaxed').innerHTML = 'The governement will be taking 18.05% of your salary or $' + taxed.toFixed(2)
-  document.getElementById('realsalary').innerHTML = 'With your income tax deducted from your salary, you will be keeping $' + realsalary.toFixed(2)
+  document.getElementById('realsalary').innerHTML = 'With your income tax deducted from your salary, you will be keeping $' + real_salary.toFixed(2)
 }
